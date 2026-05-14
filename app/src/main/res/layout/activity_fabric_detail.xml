@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Image Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#F5F5F5"
+                android:src="@android:drawable/ic_menu_gallery"/>
+
+            <ProgressBar
+                android:id="@+id/detailImageProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Title and Price -->
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fabric Name"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#00C853"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Action Buttons: Buy and Swap -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/contactSellerBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Now"
+                    android:backgroundTint="#6200EE"
+                    android:padding="12dp"
+                    android:layout_marginEnd="6dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/swapBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Request Swap"
+                    android:backgroundTint="#03DAC5"
+                    android:padding="12dp"
+                    android:layout_marginStart="6dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Details Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginTop="28dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Material:" android:textStyle="bold" android:textColor="#757575" android:paddingEnd="16dp"/>
+                    <TextView android:id="@+id/detailMaterial" android:text="Cotton" android:textColor="#212121" android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Size:" android:textStyle="bold" android:textColor="#757575" android:paddingEnd="16dp"/>
+                    <TextView android:id="@+id/detailSize" android:text="0.5m" android:textColor="#212121" android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Color:" android:textStyle="bold" android:textColor="#757575" android:paddingEnd="16dp"/>
+                    <TextView android:id="@+id/detailColor" android:text="Red" android:textColor="#212121" android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="8dp">
+                    <TextView android:text="Location:" android:textStyle="bold" android:textColor="#757575" android:paddingEnd="16dp"/>
+                    <TextView android:id="@+id/detailLocation" android:text="Current Location" android:textColor="#212121" android:textSize="15sp"/>
+                </TableRow>
+            </TableLayout>
+
+            <!-- Description Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No description provided."
+                android:textColor="#424242"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp"/>
+
+            <!-- Design Ideas Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#F3E5F5"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Design Ideas for this Material"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#6200EE"/>
+
+                    <TextView
+                        android:id="@+id/designIdeasText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Patchwork pillows\n• Small tote bags\n• Hair scrunchies"
+                        android:textColor="#4A148C"
+                        android:textSize="15sp"
+                        android:layout_marginTop="12dp"
+                        android:lineSpacingExtra="6dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Danger Zone / Delete Button -->
+            <Button
+                android:id="@+id/deleteListingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete This Listing"
+                android:textColor="#D32F2F"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="50dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
