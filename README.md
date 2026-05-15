@@ -50,17 +50,11 @@ Impact
 • Encourages local community interaction  
 
 Screenshots
-
-![Buy or Swap](buy%20or%20swap%20page.jpeg)
-
-![Design Idea](design%20idea.jpeg)
-
-![Home](homepage.jpeg)
-
+![Home](home%20page.jpeg)
 ![Listing](listing%20page.jpeg)
-
-![Nearby](nearby.jpeg)
-
+![Buy or Swap](buy%20or%20swap%20page.jpeg)
+![Nearby](nearby%20.jpeg)
+![Design Idea](design%20idea.jpeg)
 ![Profile](profile.jpeg)
 
 Author
