@@ -57,8 +57,11 @@ Screenshots
 ![Design Idea](design%20idea.jpeg)
 ![Profile](profile.jpeg)
 
-Author
+Backend (Firebase)
 
+![Firebase Database](firebase%20Database.png)
+
+Author
 Afshan Mehek Afzal Khan
 
 Repository Link
