@@ -49,6 +49,20 @@ Impact
 • Provides affordable materials for small users  
 • Encourages local community interaction  
 
+Screenshots
+
+![Buy or Swap](buy%20or%20swap%20page.jpeg)
+
+![Design Idea](design%20idea.jpeg)
+
+![Home](homepage.jpeg)
+
+![Listing](listing%20page.jpeg)
+
+![Nearby](nearby.jpeg)
+
+![Profile](profile.jpeg)
+
 Author
 
 Afshan Mehek Afzal Khan
